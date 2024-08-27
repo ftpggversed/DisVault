@@ -98,3 +98,33 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Example profile data
+    const profileData = {
+        name: "Jane Doe",
+        email: "janedoe@example.com",
+        imageUrl: "https://via.placeholder.com/100"
+    };
+
+    // Update profile information
+    document.getElementById('profile-name').textContent = profileData.name;
+    document.getElementById('profile-email').textContent = profileData.email;
+    document.getElementById('profile-image').src = profileData.imageUrl;
+
+    // Toggle settings links visibility
+    const settingsBtn = document.getElementById('settings-btn');
+    const settingsLinks = document.getElementById('settings-links');
+
+    settingsBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevents the default link behavior
+        if (settingsLinks.classList.contains('hidden')) {
+            settingsLinks.classList.remove('hidden');
+        } else {
+            settingsLinks.classList.add('hidden');
+        }
+    });
+});

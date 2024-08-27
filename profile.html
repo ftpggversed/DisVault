@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DisVault</title>
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -32,22 +32,25 @@
             <li><a href="#">Bots</a></li>
             <li><a href="#">Categories</a></li>
             <li><a href="#">Add Bot</a></li>
-            <li><a href="https://discord.com/oauth2/authorize?client_id=1277865147423260703&response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A53134%2Fauth%2Fdiscord&scope=identify">Login</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=1277865147423260703&response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A53134%2Fauth%2Fdiscord&scope=identify">Login</a> <a href="/" class="cta-button2">Logout</a></li>
         </ul>
     </nav>
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            
-            <div id="name"></div>
-            <div class="text-4xl mt-3 flex items-center font-medium" >
-            <img src='' id="avatar" class="rounded-full w-12 h-12 mr-3"/>
+ 
+    <section id="sidebar">
+        <div class="profile">
+            <img id="profile-image" src="default-profile.jpg" alt="Profile Image">
+            <h2 id="profile-name">John Doe</h2>
+            <p id="profile-email">johndoe@example.com</p>
+        </div>
+        <div class="links">
+            <a href="#overview">Overview</a>
+            <a href="settings.html">Settings</a>
+            <a href="#logout">Logout</a>
+        </div>
     </section>
-        <!-- <div class="text-4xl mt-3 flex items-center font-medium" >
-            <img src='' id="avatar" cdlass="rounded-full w-12 h-12 mr-3"/>
-            <div id="name"></div>
-        </div> -->
-        <a href="/" class="cta-button">Logout</a>
+
+
     </div>
 </body>
 </html>

@@ -1,0 +1,6 @@
+<!-- <div class="text-4xl mt-3 flex items-center font-medium" >
+            <img src='' id="avatar" cdlass="rounded-full w-12 h-12 mr-3"/>
+            <div id="name"></div>
+        </div> -->
+
+        connect with express server to change name and profile picture with discord api
