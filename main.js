@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("DOMContentLoaded", function() {
         const bots = [
             {
-                img: "bot1.png",
+                img: "bot1.epng",
                 name: "Bot 1",
                 description: "Moderation, Fun, Utility",
                 categories: ["moderation", "fun", "utility"],
